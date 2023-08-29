@@ -2,8 +2,7 @@
 title: "mecabを使って漢字をよみがなに変換するプラグインetc."
 emoji: "🦖"
 type: "tech"
-topics:
-  - "vim"
+topics: ["vim"]
 published: true
 published_at: "2023-08-28 00:00"
 ---
