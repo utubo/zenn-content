@@ -10,7 +10,7 @@ published_at: "2023-08-28 00:00"
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 08/28 の記事です。
 前回の記事は kuu さんによる、 08/26 の[「cmdwinっぽい物を数行で作る」](https://zenn.dev/vim_jp/articles/20230825_ekiden_cmdwin)という記事でした。
-次回の記事は tani さんによる、08/30 の[「Artemis: Bridging gap between Vim and Neovim」](https://www.gengo.cc/blog/artemis_bridging_cap.html)です。
+次回の記事は tani さんによる、08/30 の[「Artemis: Bridging gap between Vim and Neovim」](https://www.gengo.cc/blog/artemis_bridging_gap.html)です。
 :::
 
 # はじめに
