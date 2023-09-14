@@ -1,6 +1,6 @@
 ---
 title: "複数のjestのカバレッジ結果をマージする"
-emoji: "✏"
+emoji: "🧪"
 type: "tech"
 topics: ["test","javascript"]
 published: true
