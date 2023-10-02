@@ -111,6 +111,8 @@ https://github.com/utubo/template-dict-jp
 タグを更新すると`src`ディレクトリにある辞書ファイルを読み込んで、コメントを除去したものと全てを結合したものを`.output`ディレクトリに吐き出すGit Actionsが組み込んであります。
 他のゲームのユーザー辞書を作りたい方はご自由にご利用ください。
 
+----
+
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 08/28 の記事です。
 次回の記事は tani さんによる、08/30 の[「Artemis: Bridging gap between Vim and Neovim」](https://www.gengo.cc/blog/artemis_bridging_gap.html)です。🏃
