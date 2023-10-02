@@ -1,10 +1,10 @@
 ---
-title: "vimでgit addする前にdry runして確認する"
+title: "vimで`git add`する前に`--dry-run`して確認する"
 emoji: "🐙"
 type: "tech"
 topics: ["vim"]
 published: true
-published_at: "2099-10-06 00:00"
+published_at: "2023-10-06 00:00"
 ---
 
 :::message
@@ -30,14 +30,14 @@ add ここにファイル名
 ︙
 execute ? (y/n) > y
 ```
-と表示されるので、そのまま`y`を入力するとそのままステージングしてくれます
+とechoされるので、そのまま`y`を入力するとステージングしてくれます
 
 # スクリプト
 
-Vim9 Script版とlegacy Vimscript版、両方おいておきます
+Vim9 Script版とLegacy Vimscript版、両方おいておきます
 私は`<Space>ga`で`git add -A`するようにマッピングしています
 
-```vimscript:Vim9script版
+```vimscript:Vim 9script版
 def GitAdd(args: string)
   const current_dir = getcwd()
   try
@@ -73,7 +73,7 @@ nnoremap <Space>ga <Cmd>GitAdd -A<CR>
 
 ※ legacyの方は動作確認できてないです🙇無責任ですまない…
 
-```vimscript:legacy版
+```vimscript: Legacy版
 function s:GitAdd(args) abort
   let l:current_dir = getcwd()
   try
