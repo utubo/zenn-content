@@ -86,13 +86,13 @@ function s:GitAdd(args) abort
       echo l:list
       return
     endif
-    if !list
+    if !l:list
       echo 'none.'
       return
     endif
-    for item in split(list, '\n')
-      execute 'echoh' (item =~# '^remove' ? 'DiffDelete' : 'DiffAdd')
-      echo item
+    for l:item in split(l:list, '\n')
+      execute 'echoh' (l:item =~# '^remove' ? 'DiffDelete' : 'DiffAdd')
+      echo l:item
     endfor
     echoh Question
     if input('execute ? (y/n) > ', 'y') ==# 'y'
