@@ -111,6 +111,6 @@ nnoremap <Space>ga <Cmd>GitAdd -A<CR>
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 10/06 の記事です。
-次回の記事は TODO さんによる、10/TODO の[TODO]()です。🏃
+次回の記事は kyoh86 さんによる、10/09 の[deno/nodeのlspスイッチング意外と気を遣うよと言う話](https://zenn.dev/vim_jp/articles/69d26e3f7b0e35)です。🏃
 :::
 
