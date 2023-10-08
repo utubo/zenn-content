@@ -4,7 +4,7 @@ emoji: "💻"
 type: "tech"
 topics: ["windows"]
 published: true
-published_at: "2099-10-09 00:00"
+published_at: "2023-10-09 00:00"
 ---
 
 # はじめに
