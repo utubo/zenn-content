@@ -1,5 +1,5 @@
 ---
-title: "Windows 10のブートディスクで換装したときのメモ(2023/10版無料手順)"
+title: "Windows 10のブートディスクを換装したときのメモ(2023/10版無料手順)"
 emoji: "💻"
 type: "tech"
 topics: ["windows"]
