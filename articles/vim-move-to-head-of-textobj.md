@@ -1,5 +1,5 @@
 ---
-title: "vimでTextObjの末尾や先頭に移動する"
+title: "VimでTextObjの末尾や先頭に移動する"
 emoji: "🏎️"
 type: "tech"
 topics: ["vim"]
