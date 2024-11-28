@@ -4,12 +4,14 @@ emoji: "🏎️"
 type: "tech"
 topics: ["vim"]
 published: true
-published_at: "2099-12-31 00:00"
+published_at: "2024-12-20 00:00"
 ---
 
 :::message
-この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の TODO/TODO の記事です。
-前回の記事は TODO さんによる、 TODO/TODO の[TODO](TODO)という記事でした。
+この記事は[Vim Advent Calendar 2024](https://adventar.org/calendars/10040) の 12/20 の記事であり、
+[Vim 駅伝](https://vim-jp.org/ekiden/) の 12/20 の記事です。
+前回の記事は TODO さんによる、 12/18 の[TODO](TODO)という記事でした。
+公開日までにTODOが埋まってますように🙏
 :::
 
 # 何ができるようになるか？
@@ -102,10 +104,13 @@ noremap g <ScriptCmd>set operatorfunc=<SID>ToHead<CR>g@
 そしたら`G`を他のマッピングのprefixにも使えそう
 `gg`に対しての`GG`も直感的な気がする
 
+# 追伸
+今日12/20は誕生日です！わーい！🎂ฅ⊏'ꣲ'|ฅ
+
 ----
 
 :::message
-この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の TODO/TODO の記事です。
-次回の記事は TODO さんによる、TODO/TODO の[TODO](TODO)です。🏃
+この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 12/20 の記事です。
+次回の記事は tadashi-aikawa さんによる、12/23 の[2024年 Neovim成長日記](TODO)です。🏃
 :::
 
