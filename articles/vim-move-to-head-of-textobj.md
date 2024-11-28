@@ -46,7 +46,7 @@ published_at: "2099-12-31 00:00"
 # 実装
 
 - テキストオブジェクトの末尾に移動
-  ```vimscript
+  ```vim
   function! s:ToTail(_)
     call getpos("']")->setpos('.')
   endfunction
@@ -56,7 +56,7 @@ published_at: "2099-12-31 00:00"
   ```
 
 - テキストオブジェクトの先頭に移動
-  ```vimscript
+  ```vim
   function! s:ToHead(_)
     let p = getpos("'[")
     call setpos('.', p)
