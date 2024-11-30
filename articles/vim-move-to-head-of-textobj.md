@@ -10,7 +10,6 @@ published_at: "2024-12-20 00:00"
 :::message
 この記事は[Vim Advent Calendar 2024](https://adventar.org/calendars/10040) と[Vim 駅伝](https://vim-jp.org/ekiden/) の 12/20 の記事です。
 Vim駅伝の前回の記事は kamecha さんによる、 12/18 の[ちょっと面倒だなぁ～ってテキスト編集をなんとかする使い捨て十徳ナイフの作り方](TODO)という記事でした。
-公開日までにTODOが埋まってますように🙏
 :::
 
 # 何ができるようになるか？
