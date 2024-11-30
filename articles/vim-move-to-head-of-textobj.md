@@ -101,7 +101,7 @@ noremap g <ScriptCmd>set operatorfunc=<SID>ToHead<CR>g@
 `gg`に対しての`GG`も直感的な気がする
 
 # 追伸
-今日12/20は誕生日です！わーい！🎂ฅ⊏'ꣲ'|ฅ
+今日12/20は私の誕生日です！わーい！🎂ฅ⊏'ꣲ'|ฅ
 
 ----
 
