@@ -95,7 +95,7 @@ noremap g <ScriptCmd>set operatorfunc=<SID>ToHead<CR>g@
 - `ga`は使う頻度は少ないと思いますが、残したいなら`<Leader>ga`とかに退避させましょう
 - `gi`は`g;i`で代用できます
 
-### 
+###
 `Ga`、`Gi`、`ga`、`gi`にマッピングして`G`は`GG`に退避するのもありかなぁ🤔
 そしたら`G`を他のマッピングのprefixにも使えそう
 `gg`に対しての`GG`も直感的な気がする
