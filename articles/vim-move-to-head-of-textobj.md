@@ -85,7 +85,7 @@ Vim駅伝の前回の記事は kamecha さんによる、 12/18 の[ちょっと
 
 ## マッピングについて
 テキストオブジェクトを扱うときは`operatorfunc`を使いますが、単純に
-```
+```vim
 noremap g <ScriptCmd>set operatorfunc=<SID>ToHead<CR>g@
 ```
 としてしまうと、`g`で始まるマッピングが軒並使えなくなってしまいます！
