@@ -120,6 +120,6 @@ HeadTailMap g G
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 12/20 の記事です
-次回の記事は tadashi-aikawa さんによる、12/23 の2024年 Neovim成長日記です🏃
+次回の記事は tadashi-aikawa さんによる、[12/23 の2024年 Neovim成長日記](https://minerva.mamansoft.net/%F0%9F%93%98Articles/%F0%9F%93%982024%E5%B9%B4+Neovim%E6%88%90%E9%95%B7%E6%97%A5%E8%A8%98)です🏃
 :::
 
