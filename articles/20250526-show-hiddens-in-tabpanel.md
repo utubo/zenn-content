@@ -74,25 +74,29 @@ augroup END
 今回のメインは非表示のバッファのリストを表示するところなので
 他の箇所は簡単に流しますね
 
-## `BufLabel(b: dict<any>)`
+## `BufLabel(b: dict<any>): string`
 `getbufinfo()`の結果を元に表示する文字列を返します
-ポイントとしては、長い文字列の場合に先頭ではなく
-末尾を省略するようにしているところですかね
+ポイントとしては、以下のように
+長い文字列の場合に先頭ではなく末尾を省略するようにしているところ
+ですかね
 ```vimscript
-  const width = &tabpanelopt
-    ->matchstr('\(columns:\)\@<=\d\+') ?? '20'
-  return $' {current}{mod}{nr}{name}'
-    ->substitute($'\%{width}v.*', '>', '')
+const width = &tabpanelopt
+  ->matchstr('\(columns:\)\@<=\d\+') ?? '20'
+return $' {current}{mod}{nr}{name}'
+  ->substitute($'\%{width}v.*', '>', '')
 ```
-tabpanelの幅は`tabpanelopt`の`columns`で指定して、指定がない場合は`20`です(`h: tabpanelopt`)
+tabpanelの幅は`&tabpanelopt`の`columns`で指定されています
+指定がない場合は`20`です(`h: tabpanelopt`)
 全角文字などを考慮し指定のVirtual column幅以降を`>`へ置換しています (`h: regex`)
+
 また、非表示のバッファは`:b`でアクセスし易いようにbufnrを表示するようにしてみました
 
-## `TabPanel()`
+## `TabPanel(): string`
+タブパネル全体の内容を返します
 前4行は普通にタブの情報を表示しています
 5行目以降で目的のバッファを表示しています
-タブのリストの下に表示したいので、最後のタブのラベルの場合に追加する形です
-最後のタブが選択中の場合にバッファのリストもハイライトされてしまうのを`%#TabPanel#`によって防いでいます
+タブのリストの下に表示したいので、最後のタブの情報に追加する形です
+最後のタブが選択中の場合に追加したバッファのリストもハイライトされてしまうのを`%#TabPanel#`によって防いでいます
 
 ## `tabpanel`への設定
 私はこの関数を`~/.vim/autoload/vimrc/tabpanel.vim`に定義しているので
@@ -101,10 +105,10 @@ tabpanelの幅は`tabpanelopt`の`columns`で指定して、指定がない場�
 set tabpanel=%!vimrc#tabpanel#TabPanel()
 ```
 個人々々の環境にあわせて設定してください
-(`g:MyTabPanel()`とかにしちゃっても良いきもする…)
+(`g:MyTabPanel()`とかにしちゃっても良い気もする…)
 
 ## BufDeleteへの対応
-非表示のバッファを`:bd`などでこっそり閉じた場合に即座にtabpanelを更新させるため`showtabpanel`を再セットしています
+非表示のバッファを`:bd`などでこっそり閉じた場合に即座にtabpanelを更新させるため`&showtabpanel`を再セットしています
 ```vimscript
 augroup show_hiddens_in_tabpanel
   autocmd!
