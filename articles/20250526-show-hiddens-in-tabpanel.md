@@ -17,10 +17,14 @@ published_at: "2025-05-28 00:00"
 先日ついに追加されたtabpanelでなにかできないかなぁと考え
 どのタブのどのウィンドウにも表示されていないバッファも表示したら便利かも？？
 と思って実装してみました！
+以下画像のHIDDENのリストがそれです
 
 ![](/images/20250526-show-hiddens-in-tabpanel/overview.png)
 
 # 実装
+
+ちょっと長いです
+このあと解説しますから逃げないでください
 
 ```vimscript
 vim9script
