@@ -9,7 +9,7 @@ published_at: "2025-05-26 00:00"
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 5/26 の記事です。
-前回の記事は ryoppippi さんによる、 5/23 のvimラジオのwebpageの目に見えないアプデ情報という記事でした。
+前回の記事は ryoppippi さんによる、 5/23 の[vimラジオのwebpageの目に見えないアプデ情報](https://zenn.dev/ryoppippi/articles/d787bce6dae9c5)という記事でした。
 :::
 
 # はじめに
