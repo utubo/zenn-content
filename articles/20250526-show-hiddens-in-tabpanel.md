@@ -4,7 +4,7 @@ emoji: "📑"
 type: "tech"
 topics: ["vim"]
 published: true
-published_at: "2025-05-28 00:00"
+published_at: "2025-05-26 00:00"
 ---
 
 :::message
