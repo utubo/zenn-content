@@ -65,7 +65,7 @@ set tabpanel=%!vimrc#tabpanel#TabPanel()
 
 augroup showbuffers_in_tabpanel
   autocmd!
-  autocmd BufDelete * &showtabpanel = &showtabpanel
+  autocmd BufDelete * autocmd SafeState * ++once redrawtabp
 augroup END
 ```
 
@@ -114,7 +114,7 @@ set tabpanel=%!vimrc#tabpanel#TabPanel()
 ```vimscript
 augroup show_hiddens_in_tabpanel
   autocmd!
-	autocmd BufDelete * autocmd SafeState * ++once redrawtabp
+  autocmd BufDelete * autocmd SafeState * ++once redrawtabp
 augroup END
 ```
 
