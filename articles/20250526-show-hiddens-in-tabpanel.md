@@ -118,7 +118,7 @@ augroup show_hiddens_in_tabpanel
 augroup END
 ```
 
-(余談)`SafeState`にモヤる場合はこう書いたら納得するかな…
+(余談)`SafeState`で`redrawtabp`するのにモヤる場合はこう書いたら納得するかな…
 
 ```vimscript
 augroup show_hiddens_in_tabpanel
