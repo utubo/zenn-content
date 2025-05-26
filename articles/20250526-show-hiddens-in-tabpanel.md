@@ -108,7 +108,7 @@ set tabpanel=%!vimrc#tabpanel#TabPanel()
 (`g:MyTabPanel()`とかにしちゃっても良い気もする…)
 
 ## BufDeleteへの対応
-非表示のバッファを`:bd`などでこっそり閉じた場合に即座にtabpanelを更新させるため~~`&showtabpanel`を再セットしています~~`redrawtabp`で再描画しています
+非表示のバッファを`:bd`などでこっそり閉じた場合に即座にtabpanelを更新させるため ~~`&showtabpanel`を再セットしています~~ `redrawtabp`で再描画しています
 `SafeState`を挟んでいるのは`BufDelete`のタイミングではまだバッファが削除されていない(そして`<abuf>`を見るのが面倒くさい)からです
 (`redrawtabp`の情報はthincaさんから🙇)
 ```vimscript
