@@ -118,6 +118,16 @@ augroup show_hiddens_in_tabpanel
 augroup END
 ```
 
+(余談)`SafeState`にモヤる場合はこう書いたら納得するかな…
+
+```vimscript
+augroup show_hiddens_in_tabpanel
+  autocmd!
+  autocmd User BufDeletePost redrawtabp
+  autocmd BufDelete * autocmd SafeState * ++once doautocmd User BufDeletePost
+augroup END
+```
+
 # おわりに
 いかがだったでしょうか
 今回の実装は簡単なものです
