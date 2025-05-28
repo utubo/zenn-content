@@ -137,6 +137,6 @@ augroup END
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 5/26 の記事です。
-次回の記事は sirasagi62 さんによる、5/28 の [忘れっぽいNeovim使いに贈るtoggle-cheatsheet.nvimの紹介](https://zenn.dev/articles/309b7044c6d0da)です。🏃
+次回の記事は sirasagi62 さんによる、5/28 の [忘れっぽいNeovim使いに贈るtoggle-cheatsheet.nvimの紹介](https://zenn.dev/sirasagi62/articles/309b7044c6d0da)です。🏃
 :::
 
