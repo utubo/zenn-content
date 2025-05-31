@@ -46,7 +46,7 @@ tabpanelで動くゲームを作って遊んでみました！
 全てのタブが破壊されると
 
 ![](/images/20250602-play-tabpanel/defencetabp-gameover.png)
-終了です(vimが)
+終了です(Vimが)
 
 # やっぱり
 
