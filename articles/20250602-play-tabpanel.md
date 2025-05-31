@@ -39,7 +39,7 @@ https://github.com/utubo/vim-aquavium
 **でも、tabpanelってもっと色々できると思うんです**
 
 # 👾
-![](/images/20250602-play-tabpanel/defencetabp.gif)
+![](https://raw.githubusercontent.com/utubo/zen-content-blob/main/images/20250602-play-tabpanel/defencetabp.gif)
 https://github.com/utubo/vim-defencetabp
 記事タイトル回収です
 タブに敵の弾があたると`confirm tabclose`されてしまいます(`tabclose!`でないのは優しさ)
