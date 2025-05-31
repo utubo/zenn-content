@@ -43,7 +43,7 @@ https://github.com/utubo/vim-defencetabp
 記事タイトル回収です
 tabpanelで動くゲームを作って遊んでみました！
 タブに敵の弾があたると`confirm tabclose`されてしまいます(`tabclose!`でないのは優しさ)
-全てのタブが破壊されると
+自機の残機は無限ですが、全てのタブが破壊されると
 
 ![](/images/20250602-play-tabpanel/defencetabp-gameover.png)
 終了です(vimが)
