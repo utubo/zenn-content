@@ -33,7 +33,7 @@ https://github.com/utubo/vim-anypanel
 
 # 🐟
 
-![](https://github.com/user-attachments/assets/a404d444-8276-4af2-aaa7-ed9f46f6e451)
+![](/images/20250602-play-tabpanel/aquavium.gif)
 
 https://github.com/utubo/vim-aquavium
 
