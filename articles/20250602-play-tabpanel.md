@@ -23,8 +23,7 @@ https://zenn.dev/utubo/articles/20250526-show-hiddens-in-tabpanel
 ![](/images/20250602-play-tabpanel/anypanel.png)
 https://github.com/utubo/vim-anypanel
 式を設定し何でも表示できるプラグインを作ってカレンダーとか表示してみました
-というかtabpanelって元々式を設定すれば何でも表示できるので、
-このプラグインは実はレイアウト補助プラグインです
+※というかtabpanelって元々式を設定すれば何でも表示できるので、このプラグインは実はレイアウト補助プラグインです
 
 **でも、tabpanelってもっと色々できると思うんです**
 
