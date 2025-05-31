@@ -22,9 +22,9 @@ https://zenn.dev/utubo/articles/20250526-show-hiddens-in-tabpanel
 # 何でも表示できるプラグインを作ってみた
 ![](/images/20250602-play-tabpanel/anypanel.png)
 https://github.com/utubo/vim-anypanel
-何でも表示できるプラグインを作ってカレンダーとか表示してみました
-他にもファイルの内容を表示したりだとか、式を設定すれば何でも表示できます
-というかtabpanelって元々そういうものなので、このプラグインは実はレイアウト補助プラグインです
+式を設定し何でも表示できるプラグインを作ってカレンダーとか表示してみました
+というかtabpanelって元々式を設定すれば何でも表示できるので、
+このプラグインは実はレイアウト補助プラグインです
 
 **でも、tabpanelってもっと色々できると思うんです**
 
@@ -42,6 +42,7 @@ https://github.com/utubo/vim-aquavium
 ![](https://raw.githubusercontent.com/utubo/zen-content-blob/main/images/20250602-play-tabpanel/defencetabp.gif)
 https://github.com/utubo/vim-defencetabp
 記事タイトル回収です
+tabpanelで動くゲームを作って遊んでみました！
 タブに敵の弾があたると`confirm tabclose`されてしまいます(`tabclose!`でないのは優しさ)
 全てのタブが破壊されると
 
