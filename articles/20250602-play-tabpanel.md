@@ -13,7 +13,7 @@ published_at: "2025-06-02 00:00"
 :::
 
 # もっと遊ぼう
-前回、tabpanelに表示のバッファリストを表示してみました
+前回、tabpanelに非表示のバッファリストを表示してみました
 https://zenn.dev/utubo/articles/20250526-show-hiddens-in-tabpanel
 
 **でも、tabpanelってもっと色々できると思うんです**
