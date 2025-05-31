@@ -24,6 +24,7 @@ https://zenn.dev/utubo/articles/20250526-show-hiddens-in-tabpanel
 https://github.com/utubo/vim-anypanel
 tabpanelに何でも表示できるプラグインを作ってカレンダーとかを表示してみました
 ※というかtabpanelって元々式を設定すれば何でも表示できるので、このプラグインは実はレイアウト補助プラグインです
+持て余しがちな下の空間を有効活用できて良い感じです
 
 **でも、tabpanelってもっと色々できると思うんです**
 
@@ -32,7 +33,7 @@ tabpanelに何でも表示できるプラグインを作ってカレンダーと
 https://github.com/utubo/vim-aquavium
 魚を飼ってみました
 癒されますね
-前述のプラグインに組込むこともできます
+前述のプラグインに組み込むこともできます
 ![](/images/20250602-play-tabpanel/aquavium-in-any.png)
 
 **でも、tabpanelってもっと色々できると思うんです**
