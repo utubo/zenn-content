@@ -1,5 +1,5 @@
 ---
-title: "🐟Vimのtabpanelで遊んんでみた"
+title: "🐟Vimのtabpanelで遊んでみた"
 emoji: "🐟"
 type: "tech"
 topics: ["vim"]
