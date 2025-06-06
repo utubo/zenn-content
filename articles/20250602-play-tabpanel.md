@@ -59,6 +59,6 @@ tabpanelで動くゲームを作って遊んでみました！
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 6/2 の記事です。
-次回の記事は tositada さんによる、6/4 の [:help](https://vim-jp.org/ekiden/#article-2025-06-04)です。🏃
+次回の記事は tositada さんによる、6/4 の [:helpの書き方](https://vim-jp.org/ekiden/#article-2025-06-04)です。🏃
 :::
 
