@@ -31,11 +31,12 @@ nnoremap g: <Cmd>.source<CR>
 nnoremap g9 <Cmd>vim9cmd :.source<CR>
 ```
 
-`:.`でsourceにレンジを渡しているのが味噌です
 単順に`<Cmd>.vim9cmd source<CR>`のように`vim9cmd`にレンジを渡そうとすると以下のエラーになってしまいます
 ```
 E481: No range allowed.
 ```
+
+そこで`:.`でsourceにレンジを渡しています
 
 # ビジュアルモードの選択範囲を実行する
 
