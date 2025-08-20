@@ -8,7 +8,7 @@ published_at: "2025-08-20 00:00"
 ---
 
 :::message
-この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の X/X の記事です。
+この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 8/20 の記事です。
 前回の記事は kuuote さんによる、 8/18 の[Vimのaugroup名に `#` は使ってはいけない](https://vim-jp.org/ekiden/#article-2025-08-18)という記事でした。
 :::
 
