@@ -31,7 +31,7 @@ nnoremap g: <Cmd>.source<CR>
 nnoremap g9 <Cmd>vim9cmd :.source<CR>
 ```
 
-単順に`<Cmd>.vim9cmd source<CR>`のように`vim9cmd`にレンジを渡そうとすると以下のエラーになってしまいます
+単純に`<Cmd>.vim9cmd source<CR>`のように`vim9cmd`にレンジを渡そうとすると以下のエラーになってしまいます
 ```
 E481: No range allowed.
 ```
