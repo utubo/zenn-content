@@ -34,10 +34,10 @@ execute ? (y/n) > y
 
 # スクリプト
 
-Vim9 Script版とLegacy Vimscript版、両方おいておきます
+Vim9 script版とLegacy Vim script版、両方おいておきます
 私は`<Space>ga`で`git add -A`するようにマッピングしています
 
-```vimscript:Vim 9script版
+```vimscript:Vim9 script版
 def GitAdd(args: string)
   const current_dir = getcwd()
   try

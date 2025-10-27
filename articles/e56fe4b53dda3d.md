@@ -32,7 +32,7 @@ https://github.com/tversteeg/registers.nvim
 https://github.com/utubo/vim-registers-lite
 
 README.mdの画像だけ見てVimでそれっぽいのをつくりました
-自分用なのでvim9scriptです
+自分用なのでVim9 scriptです
 逆にnvimで動かない
 (nvimは入れてないのにVimだけ新しくしてる人少なそう…需要…)
 ともかくこれでどこにyankされてたっけ？って迷わずにすみます
