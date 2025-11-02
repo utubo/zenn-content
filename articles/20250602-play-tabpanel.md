@@ -9,7 +9,7 @@ published_at: "2025-06-02 00:00"
 
 :::message
 この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 6/2 の記事です。
-前回の記事は こまもか さんによる、 5/30 の[Emacsを使い始めて半年が経った](https://comamoca.dev/blog/2025-05-30-half-year-passed-using-emacs/)という記事でした。
+前回の記事は こまもか さんによる、 5/30 の[Emacsを使い始めて半年が経った](https://comamoca.dev/blog/2025-05-30-2025-05-30-half-year-passed-using-emacs/)という記事でした。
 :::
 
 # もっと遊ぼう
