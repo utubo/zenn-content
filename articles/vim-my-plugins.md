@@ -1,6 +1,6 @@
 ---
 title: "自作Vimプラグインまとめ"
-emoji: "⌨"
+emoji: "🧩"
 type: "tech"
 topics: ["vim"]
 published: true
@@ -9,7 +9,9 @@ published_at: "2099-12-31 00:00"
 
 自作Vimプラグインのうち使い続けているものを軽く紹介します
 環境の都合でほぼVim9 script製で
+
 > Not for you, but for me.
+
 なものばかりです
 身勝手の極意
 
@@ -154,7 +156,7 @@ Vim9 scriptで作ったSKK日本語入力プラグインです
 https://www.github/utubo/vim-yomigana
 https://zenn.dev/utubo/articles/20230828-vim-yomigana
 
-MecabやSKKの辞書を利用して、漢字やひらがなをカタカナに変換するプラグインです
+SKKの辞書やMecabを利用して、漢字やひらがなをカタカナに変換するプラグインです
 
 
 ## zenmode
