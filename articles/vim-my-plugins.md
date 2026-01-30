@@ -50,7 +50,7 @@ published_at: "2099-12-31 00:00"
 
 ## anypanel
 
-https://www.github/utubo/vim-anypanel
+https://github.com/utubo/vim-anypanel
 https://zenn.dev/utubo/articles/20250602-play-tabpanel
 
 tabpanelのレイアウトを補助するプラグインです
@@ -58,7 +58,7 @@ tabpanelのレイアウトを補助するプラグインです
 
 ## colorscheme-girly
 
-https://www.github/utubo/vim-colorscheme-girly
+https://github.com/utubo/vim-colorscheme-girly
 
 うちのvimが一番kawaii!
 ピンク基調のカラースキームです
@@ -66,7 +66,7 @@ https://www.github/utubo/vim-colorscheme-girly
 
 ## ezpack
 
-https://www.github/utubo/vim-ezpack
+https://github.com/utubo/vim-ezpack
 
 自作プラグインマネージャ
 よくある(?)packaddを利用したやつです
@@ -74,7 +74,7 @@ Vim9 scriptで作ったやつが欲しいなと思って作りました
 
 ## headtail
 
-https://www.github/utubo/vim-headtail
+https://github.com/utubo/vim-headtail
 https://zenn.dev/utubo/articles/vim-move-to-head-of-textobj
 
 Textobjの先頭や末尾に移動
@@ -83,7 +83,7 @@ Textobjの先頭や末尾に移動
 
 ## hlpairs
 
-https://www.github/utubo/vim-hlpairs
+https://github.com/utubo/vim-hlpairs
 https://zenn.dev/utubo/articles/7e12d9684cd2af
 
 括弧をハイライト強化版
@@ -91,7 +91,7 @@ https://zenn.dev/utubo/articles/7e12d9684cd2af
 
 ## minviml
 
-https://www.github/utubo/vim-minviml
+https://github.com/utubo/vim-minviml
 https://zenn.dev/utubo/articles/01788284d5e21b
 
 Vim scriptをminify
@@ -99,7 +99,7 @@ Vim scriptをminify
 
 ## popselect
 
-https://www.github/utubo/vim-popselect
+https://github.com/utubo/vim-popselect
 
 ポップアップで色々開くやつ
 MRUやバッファの一覧などをさくっと開くプラグインです
@@ -107,7 +107,7 @@ MRUやバッファの一覧などをさくっと開くプラグインです
 
 ## previewcmd
 
-https://www.github/utubo/vim-previewcmd
+https://github.com/utubo/vim-previewcmd
 
 コマンドをプレビューします
 以下のissueを見て作ってみました
@@ -116,7 +116,7 @@ https://github.com/vim/vim/issues/18843
 
 ## reformatdate
 
-https://www.github/utubo/vim-reformatdate
+https://github.com/utubo/vim-reformatdate
 https://zenn.dev/utubo/articles/6e2d2cfa049414
 
 日付と曜日を<C-a>でインクリメントとかできるようにします
@@ -124,7 +124,7 @@ https://zenn.dev/utubo/articles/6e2d2cfa049414
 
 ## registers-lite
 
-https://www.github/utubo/vim-registers-lite
+https://github.com/utubo/vim-registers-lite
 https://zenn.dev/utubo/articles/e56fe4b53dda3d
 
 registers.nvimライクなプラグイン
@@ -132,28 +132,28 @@ registers.nvimライクなプラグイン
 
 ## skipslash
 
-https://www.github/utubo/vim-skipslash
+https://github.com/utubo/vim-skipslash
 
 `:%s/foo/bar/`のとき<Tab>でfooからbarへ移動できるようにします
 
 
 ## update
 
-https://www.github/utubo/vim-update
+https://github.com/utubo/vim-update
 
 Windowsのgvim.exeを最新に更新する関数を提供します
 
 
 ## vim9skkp
 
-https://www.github/utubo/vim-vim9skkp
+https://github.com/utubo/vim-vim9skkp
 
 Vim9 scriptで作ったSKK日本語入力プラグインです
 
 
 ## yomigana
 
-https://www.github/utubo/vim-yomigana
+https://github.com/utubo/vim-yomigana
 https://zenn.dev/utubo/articles/20230828-vim-yomigana
 
 SKKの辞書やMecabを利用して、漢字やひらがなをカタカナに変換するプラグインです
@@ -161,7 +161,7 @@ SKKの辞書やMecabを利用して、漢字やひらがなをカタカナに変
 
 ## zenmode
 
-https://www.github/utubo/vim-zenmode
+https://github.com/utubo/vim-zenmode
 
 cmdheight=0をエミュレートし、statuslineも非表示にします
 
