@@ -16,15 +16,18 @@ published_at: "2099-12-31 00:00"
 身勝手の極意
 
 ## 早見表
+
+※Legacy Vim scriptでも動くものには`(レ)`ってつけときます
+
 - anypanel
   tabpanelのレイアウトを補助するプラグイン
-- colorscheme-girly
+- colorscheme-girly(レ)
   うちのvimが一番kawaii!
 - ezpack
   自作プラグインマネージャ
-- headtail
+- headtail(レ)
   Textobjの先頭や末尾に移動
-- hlpairs
+- hlpairs(Lua版もあります)
   括弧をハイライト強化版
 - minviml
   Vim scriptをminify
@@ -32,11 +35,11 @@ published_at: "2099-12-31 00:00"
   ポップアップで色々開くやつ
 - previewcmd
   コマンド補完
-- reformatdate
+- reformatdate(レ)
   <C-a>で日付と曜日をインクリメントとか
 - registers-lite
   registers.nvimライクなプラグイン
-- skipslash
+- skipslash(レ)
   `:%s/foo/bar/`のとき<Tab>でfooからbarへ移動
 - update
   gvim.exeの最新版をgithubから落とす
@@ -84,6 +87,7 @@ Textobjの先頭や末尾に移動
 ## hlpairs
 
 https://github.com/utubo/vim-hlpairs
+https://github.com/utubo/hlpairs.nvim
 https://zenn.dev/utubo/articles/7e12d9684cd2af
 
 括弧をハイライト強化版
