@@ -8,6 +8,10 @@ published_at: "2099-12-31 00:00"
 ---
 
 自作Vimプラグインのうち使い続けているものを軽く紹介します
+環境の都合でほぼVim9 script製で
+> Not for you, but for me.
+なものばかりです
+身勝手の極意
 
 ## 早見表
 - anypanel
@@ -55,6 +59,7 @@ tabpanelのレイアウトを補助するプラグインです
 https://www.github/utubo/vim-colorscheme-girly
 
 うちのvimが一番kawaii!
+ピンク基調のカラースキームです
 
 
 ## ezpack
@@ -104,6 +109,7 @@ https://www.github/utubo/vim-previewcmd
 
 コマンドをプレビューします
 以下のissueを見て作ってみました
+https://github.com/vim/vim/issues/18843
 
 
 ## reformatdate
@@ -111,7 +117,7 @@ https://www.github/utubo/vim-previewcmd
 https://www.github/utubo/vim-reformatdate
 https://zenn.dev/utubo/articles/6e2d2cfa049414
 
-<C-a>で日付と曜日をインクリメントとかできるようにします
+日付と曜日を<C-a>でインクリメントとかできるようにします
 
 
 ## registers-lite
@@ -126,14 +132,14 @@ registers.nvimライクなプラグイン
 
 https://www.github/utubo/vim-skipslash
 
-`:%s/foo/bar/`のとき<Tab>でfooからbarへ移動
+`:%s/foo/bar/`のとき<Tab>でfooからbarへ移動できるようにします
 
 
 ## update
 
 https://www.github/utubo/vim-update
 
-Windowsのgvim.exeを最新に更新するプラグインです
+Windowsのgvim.exeを最新に更新する関数を提供します
 
 
 ## vim9skkp
@@ -156,4 +162,8 @@ MecabやSKKの辞書を利用して、漢字やひらがなをカタカナに変
 https://www.github/utubo/vim-zenmode
 
 cmdheight=0をエミュレートし、statuslineも非表示にします
+
+----
+Zennの記事になってないものはそのうち詳しく紹介するかもです
+
 
