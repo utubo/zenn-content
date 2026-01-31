@@ -19,37 +19,40 @@ published_at: "2099-12-31 00:00"
 
 ※Legacy Vim scriptでも動くものには`(レ)`ってつけときます
 
-- anypanel
+- [anypanel](#anypanel)
   tabpanelのレイアウトを補助するプラグイン
-- colorscheme-girly(レ)
+- [colorscheme-girly](#colorscheme-girly) (レ)
   うちのvimが一番kawaii!
-- ezpack
+- [ezpack](#ezpack)
   自作プラグインマネージャ
-- headtail(レ)
+- [headtail](#headtail) (レ)
   Textobjの先頭や末尾に移動
-- hlpairs(Lua版もあります)
+- [hlpairs](#hlpairs) (Lua版もあります)
   括弧をハイライト強化版
-- minviml
+- [minviml](#minviml)
   Vim scriptをminify
-- popselect
+- [popselect](#popselect)
   ポップアップで色々開くやつ
-- previewcmd
+- [previewcmd](#previewcmd)
   コマンド補完
-- reformatdate(レ)
+- [reformatdate](#reformatdate) (レ)
   <C-a>で日付と曜日をインクリメントとか
-- registers-lite
+- [registers-lite](#registers-lite)
   registers.nvimライクなプラグイン
-- skipslash(レ)
+- [skipslash](#skipslash) (レ)
   `:%s/foo/bar/`のとき<Tab>でfooからbarへ移動
-- update
+- [update](#update)
   gvim.exeの最新版をgithubから落とす
-- vim9skkp
+- [vim9skkp](#vim9skkp)
   Vim9 scriptで作ったskk
-- yomigana
+- [yomigana](#yomigana)
   漢字やひらがなをカタカナに変換したり
-- zenmode
+- [zenmode](#zenmode)
   cmdheight=0エミュレータ(statuslineも非表示)
 
+----
+
+以下リポジトリと記事へのリンクです
 
 ## anypanel
 
@@ -146,6 +149,7 @@ https://github.com/utubo/vim-skipslash
 https://github.com/utubo/vim-update
 
 Windowsのgvim.exeを最新に更新する関数を提供します
+プラグイン名が雑すぎる…
 
 
 ## vim9skkp
@@ -170,6 +174,6 @@ https://github.com/utubo/vim-zenmode
 cmdheight=0をエミュレートし、statuslineも非表示にします
 
 ----
-Zennの記事になってないものはそのうち詳しく紹介するかもです
+Zennの記事になってないものもそのうち詳しく紹介するかもです
 
 
