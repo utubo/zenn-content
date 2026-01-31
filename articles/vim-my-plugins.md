@@ -40,7 +40,7 @@ published_at: "2026-01-31 00:00"
 - [registers-lite](#registers-lite)
   registers.nvimライクなプラグイン
 - [skipslash](#skipslash) (レ)
-  `:%s/foo/bar/`のとき<Tab>でfooからbarへ移動
+  `:%s/foo/bar/`のとき<Tab>でカーソルをfooからbarへ移動
 - [update](#update)
   gvim.exeを最新へ更新する
 - [vim9skkp](#vim9skkp)
@@ -142,7 +142,7 @@ registers.nvimライクなプラグイン
 
 https://github.com/utubo/vim-skipslash
 
-`:%s/foo/bar/`のとき<Tab>でfooからbarへ移動できるようにします
+`:%s/foo/bar/`のとき<Tab>でカーソルをfooからbarへ移動できるようにします
 
 
 ## update
