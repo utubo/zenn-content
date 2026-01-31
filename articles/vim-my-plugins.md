@@ -42,7 +42,7 @@ published_at: "2099-12-31 00:00"
 - [skipslash](#skipslash) (レ)
   `:%s/foo/bar/`のとき<Tab>でfooからbarへ移動
 - [update](#update)
-  gvim.exeの最新版をgithubから落とす
+  gvim.exeを最新へ更新する
 - [vim9skkp](#vim9skkp)
   Vim9 scriptで作ったskk
 - [yomigana](#yomigana)
@@ -148,7 +148,7 @@ https://github.com/utubo/vim-skipslash
 
 https://github.com/utubo/vim-update
 
-Windowsのgvim.exeを最新に更新する関数を提供します
+Windowsのgvim.exeをvim/vim-win32-installerの最新へ更新する関数を提供します
 プラグイン名が雑すぎる…
 
 
