@@ -46,7 +46,7 @@ published_at: "2026-01-31 00:00"
 - [vim9skkp](#vim9skkp)
   Vim9 scriptで作ったskk
 - [yomigana](#yomigana)
-  漢字やひらがなをカタカナに変換したり
+  漢字をひらがなやカタカナに変換したり
 - [zenmode](#zenmode)
   cmdheight=0エミュレータ(statuslineも非表示)
 
