@@ -77,6 +77,7 @@ https://github.com/utubo/vim-ezpack
 自作プラグインマネージャ
 よくある(?)packaddを利用したやつです
 Vim9 scriptで作ったやつが欲しいなと思って作りました
+ヘルプファイルが殴り書きなのが大変よろしくない
 
 ## headtail
 
