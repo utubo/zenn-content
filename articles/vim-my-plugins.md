@@ -164,7 +164,7 @@ Vim9 scriptで作ったSKK日本語入力プラグインです
 https://github.com/utubo/vim-yomigana
 https://zenn.dev/utubo/articles/20230828-vim-yomigana
 
-SKKの辞書やMecabを利用して、漢字やひらがなをカタカナに変換するプラグインです
+SKKの辞書やMecabを利用して、漢字をひらがなやカタカナに変換するプラグインです
 
 
 ## zenmode
