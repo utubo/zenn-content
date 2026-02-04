@@ -23,6 +23,8 @@ published_at: "2026-01-31 00:00"
   tabpanelのレイアウトを補助するプラグイン
 - [colorscheme-girly](#colorscheme-girly) (レ)
   うちのvimが一番kawaii!
+- [colorscheme-softgreen](#colorscheme-softgreen) (レ)
+  緑は目に優しい
 - [ezpack](#ezpack)
   自作プラグインマネージャ
 - [headtail](#headtail) (レ)
@@ -68,6 +70,14 @@ https://github.com/utubo/vim-colorscheme-girly
 
 うちのvimが一番kawaii!
 ピンク基調のカラースキームです
+
+
+## colorscheme-softgreen
+
+https://github.com/utubo/vim-colorscheme-softgreen
+
+緑は目に優しい
+カラースキームは、前述のgirlyとこのsoftgreen2と[edge](https://github.com/sainnhe/edge)と[iceberg](https://github.com/cocopon/iceberg.vim)をその日の気分で使ってます
 
 
 ## ezpack
