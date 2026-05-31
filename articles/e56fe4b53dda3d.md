@@ -14,7 +14,7 @@ published_at: "2022-07-26 21:57"
 普段Vimを使っているのですが、レジスタにヤンクした値を忘れがちなので手がないか検索したところ
 素敵なプラグインにめぐりあいました
 
-https://github.com/tversteeg/registers.nvim
+https://codeberg.org/fosk/registers.nvim
 
 ノーマルモードで`"`をタイプしたりすると以下のようなポップアップが表示されるみたいです
 素敵すぎる…
