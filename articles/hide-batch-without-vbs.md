@@ -18,7 +18,7 @@ published_at: "2026-06-03 00:00"
 ## やりかた
 
 1. 以下のようなを.jsファイルを用意する
-  (ためしにエクスプローラーを起動する例)
+  (ためしに黒いコンソールウインドウを表示させずにエクスプローラーを起動する例)
 
 ```js:example.js
 new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | % { $p = $false }{ if ($p) { $_ } if ($_ -match '\\[main\\]') { $p = $true } } | Invoke-Expression\"", 0, true);
