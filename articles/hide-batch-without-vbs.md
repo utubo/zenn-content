@@ -7,6 +7,8 @@ published: true
 published_at: "2026-06-03 00:00"
 ---
 
+それでいてバッチファイルは1行にまとめたい
+
 ## TL;TD
 
 .vbsではなく.jsをwscriptで実行すればOK
