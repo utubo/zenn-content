@@ -43,13 +43,13 @@ explorer .
 
 ### 原理
 #### wscript.exeから以下を実行
-1. powershellで後述の処理を実行する
+1. powershell.exeで後述の処理を実行する
 2. 一応`Quit`で終了しておく
 3. `/* [main]` ～ 最終行`# */`はコメントなので無視
 
 #### powershell.exeでの処理
 1. `Get-Content`でスクリプト自身を読み込む
-2. `[main]`とかかれた行までスキップ
+2. `[main]`とかかれた行まで読み飛ばす
 3. 以降の行を`Invoke-Expression`で実行
 4. 最終行は`#`で開始されているのでコメント
 
