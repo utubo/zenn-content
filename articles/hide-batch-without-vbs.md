@@ -48,7 +48,7 @@ explorer .
 ### 原理
 #### wscript.exeから以下を実行
 1. powershell.exeで後述の処理を実行する
-2. 一応`Quit`で終了しておく
+2. 一応`Quit`で終了しておく(無くてもよい)
 3. `/* [main]` ～ 最終行`# */`はコメントなので無視
 
 #### powershell.exeでの処理
