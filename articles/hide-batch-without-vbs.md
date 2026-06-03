@@ -41,12 +41,13 @@ explorer .
 堅牢な作りではないので、どういう仕組みか把握しておいたほうがよいかもです
 例えばPowerShell Script内に`*/`という文字列が含まれていると動かないかもです
 
-### wscript.exeから以下を実行
+### 原理
+#### wscript.exeから以下を実行
 1. powershellで後述の処理を実行する
 2. 一応`Quit`で終了しておく
 3. `/* [main]` ～ 最終行`# */`はコメントなので無視
 
-### powershell.exeでの処理
+#### powershell.exeでの処理
 1. `Get-Content`でスクリプト自身を読み込む
 2. `[main]`とかかれた行までスキップ
 3. 以降の行を`Invoke-Expression`で実行
