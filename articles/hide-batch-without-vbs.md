@@ -57,5 +57,16 @@ explorer .
 3. 以降の行を`Invoke-Expression`で実行
 4. 最終行は`#`で開始されているのでコメント
 
+## 少しコンパクトに
+
+`[main]`を探すのではなく、「固定で1行目読み飛す」で良ければ以下のようにも書けます
+
+```js:example.js
+new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | Select-Object -Skip 1 | Invoke-Expression\"", 0, true);/*
+# Write your PowerShell code directly below
+# example
+explorer .
+# */
+```
 
 ※なんで.vbsを使わないのとかcscript.exeとwscript.exeの違いにとかついては割愛します🙏
