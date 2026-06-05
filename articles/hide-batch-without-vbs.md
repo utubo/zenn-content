@@ -59,7 +59,7 @@ explorer .
 
 ## 少しコンパクトに
 
-`[main]`を探すのではなく、「固定で1行目読み飛す」で良ければ以下のようにも書けます
+`[main]`を探すのではなく、「固定で1行目を読み飛す」で良ければ以下のようにも書けます
 
 ```js:example.js
 new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | Select-Object -Skip 1 | Invoke-Expression\"", 0, true);/*
