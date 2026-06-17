@@ -21,7 +21,7 @@ published_at: "2026-06-03 00:00"
   (ためしに黒いコンソールウインドウを表示させずにエクスプローラーを起動する例)
 
 ```js:example.js
-new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | % { $p = $false }{ if ($p) { $_ } if ($_ -match '\\[main\\]') { $p = $true } } | Invoke-Expression\"", 0, true);
+new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | % { $p = $false }{ if ($p) { $_ } if ($_ -match '\\[main\\]') { $p = $true } } | Out-String | Invoke-Expression\"", 0, true);
 WScript.Quit();
 
 /* [main] Write your PowerShell code directly below
@@ -31,6 +31,12 @@ explorer .
 
 # */
 ```
+
+:::message
+** 2026/06/18 **
+複数行のスクリプトで動作が怪しかったので、
+`Invoke-Expression`の前に`Out-String`を追加しました
+:::
 
 2. タスクスケジューラーでタスクを以下の様に作成する
   - 全般
@@ -62,7 +68,7 @@ explorer .
 `[main]`を探すのではなく、「固定で1行目を読み飛す」で良ければ以下のようにも書けます
 
 ```js:example.js
-new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | Select-Object -Skip 1 | Invoke-Expression\"", 0, true);/*
+new ActiveXObject("WScript.Shell").Run("powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content '" + WScript.ScriptFullName + "' | Select-Object -Skip 1 | Out-String | Invoke-Expression\"", 0, true);/*
 # Write your PowerShell code directly below
 # example
 explorer .
