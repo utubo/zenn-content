@@ -33,6 +33,8 @@ published_at: "2026-01-31 00:00"
   括弧をハイライト強化版
 - [minviml](#minviml)
   Vim scriptをminify
+- [popclip](#popclip)
+  テキストをポップアップでクリップします
 - [popselect](#popselect)
   ポップアップで色々開くやつ
 - [previewcmd](#previewcmd)
@@ -114,6 +116,12 @@ https://zenn.dev/utubo/articles/01788284d5e21b
 
 Vim scriptをminify
 
+
+## popselect
+
+https://github.com/utubo/vim-popclip
+
+テキストをポップアップでクリップします
 
 ## popselect
 
