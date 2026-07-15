@@ -117,9 +117,10 @@ https://zenn.dev/utubo/articles/01788284d5e21b
 Vim scriptをminify
 
 
-## popselect
+## popclip
 
 https://github.com/utubo/vim-popclip
+https://zenn.dev/utubo/articles/vim-popclip
 
 テキストをポップアップでクリップします
 
