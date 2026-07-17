@@ -1,0 +1,140 @@
+---
+title: "Vimのビジュアルモードの切り替えについて考える"
+emoji: "🤔"
+type: "tech"
+topics: ["vim"]
+published: true
+published_at: "2099-07-22 00:00"
+---
+
+:::message
+この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 7/22 の記事です。
+:::
+
+# ビジュアル 行ビジュアル 矩形ビジュアル
+
+今迄身体に染み付いてて気付かなかったんですが
+よくよく考えると`v`、`V`、`<C-v>`って使いわけるの面倒くさくないですか
+ぜんぶ`v`でいいかんじによろしくしたい
+思考の速度を超えたい思考したくない(怠惰)
+
+# ビジュアル(文字単位)での行移動
+
+文字単位のビジュアルのときって上下にカーソルを動かすことって少ないと思うんです
+逆に行ビジュアルのときは複数行を選択したいときです(単一行への操作ならビジュアルを使わなくてよい)
+それならば、文字単位のビジュアルのとき行移動したときは行ビジュアルに移行させちゃいましょう
+とはいえ、まったく競合しないというわけでもないので
+「ビジュアルモードに入ってまだカーソルを動かしていないなら」
+という条件をつけておきます
+
+これで`vj`とか`vk`で即座に複数行を選択できます
+
+```vim
+xnoremap <expr> k $'{mode() ==# 'v' && getpos('.') ==# getpos('v') ? 'V' : ''}{v:count1}k'
+xnoremap <expr> j $'{mode() ==# 'v' && getpos('.') ==# getpos('v') ? 'V' : ''}{v:count1}j'
+```
+
+# 行ビジュアルでの横移動
+
+行ビジュアル(`V`)では基本的にカーソルを横に移動させることは無いと思います
+
+1. 横移動で矩形ビジュアルに移行する
+
+横移動で矩形ビジュアルに移行させれば小指を労れそうです
+矩形ビジュアルに移行するまでは行単位でハイライトされるのでちょっと慣れが必要かもです
+
+```vim
+xnoremap <expr> h $'{mode() ==# 'V' ? "\<C-v>" : ''}{v:count1}h'
+xnoremap <expr> l $'{mode() ==# 'V' ? "\<C-v>" : ''}{v:count1}l'
+```
+
+2. 横移動でノーマルモードに戻る
+
+小指が平気な人はノーマルモードに戻るようにするのもお勧めです
+
+```vim
+xnoremap <expr> h $'{mode() ==# 'V' ? "\<Esc>" : ''}{v:count1}h'
+xnoremap <expr> l $'{mode() ==# 'V' ? "\<Esc>" : ''}{v:count1}l'
+```
+
+# ビジュアルモード中の`v`での切り替え
+
+
+1. ビジュアル→行ビジュアル→矩形ビジュアル→ノーマルモード
+
+ビジュアルモード中に`v`, `V`, `<C-v>`で切り替えられますが
+これも`v`だけですませたいところです
+ノーマルモードから`vv`で行ビジュアルになるのがわかりやすいです
+
+```vim
+xnoremap <script> <expr> v matchstr("vV\<C-v>\<ESC>", $'{mode()}\@<=.')
+```
+
+2. どのビジュアルモードでもノーマルモードに戻す
+
+何も考えたくないのでシンプルに…
+行ビジュアルや矩形ビジュアルから文字単位のビジュアルに移行できなくなる弊害がありますが
+おそらくそんな状況には遭遇しないでしょう
+
+```vim
+xnoremap v <Esc>
+```
+
+# ビジュアルモード中に`q`で矩形ビジュアル
+
+前述の行ビジュアルでの横移動でも矩形ビジュアルに移行できますが
+それとは別に用意しておくと小指が喜びそうです
+`<C-q>`にならってビジュアルモード中に`q`で矩形ビジュアルへ
+ノーマルモードからなら`vq`で矩形ビジュアルになります
+マクロの記録は`Q`へ退避
+(そういえばビジュアルモード中にマクロ機能使ったことないな…)
+
+```vim
+xnoremap q <C-v>
+xnoremap Q q
+```
+
+# `I`と`A`
+
+`I`と`A`は矩形ビジュアルで使う便利な機能ですが、
+どのビジュアルモードでも起動するようにしちゃえば考えることが減ります
+
+```vim
+xnoremap <expr> I mode() ==# "\<C-v>" ? 'I' : "<C-v>I"
+xnoremap <expr> A mode() ==# "\<C-v>" ? 'A' : "<C-v>A"
+```
+
+# 私のマッピング
+
+今はこんな感じにしてます
+
+- ビジュアルで行移動で行ビジュアル
+- 行ビジュアルで横移動で矩形ビジュアル
+- `v`でノーマルモード
+- `q`, `I`, `A`で矩形ビジュアル
+- マクロ記録は`Q`
+- hjkl以外にも対応
+- 共通処理は`<Plug>`で纏めました
+
+```vim
+xnoremap <expr> <Plug>(auto-V) $'{mode() ==# 'v' && getpos('.') ==# getpos('v') ? 'V' : ''}'
+xnoremap <expr> k $"\<Plug>(auto-V){v:count1}k"
+xnoremap <expr> j $"\<Plug>(auto-V){v:count1}j"
+xnoremap G <Plug>(auto-V)G
+xnoremap <C-g> <Plug>(auto-V)<C-g>
+
+xnoremap <expr> <Plug>(auto-c-v) $'{mode() ==# 'V' ? "\<C-v>" : ''}'
+xnoremap <expr> h $"\<Plug>(auto-c-v){v:count1}h"
+xnoremap <expr> l $"\<Plug>(auto-c-v){v:count1}l"
+xnoremap 0 <Plug>(auto-c-v)0
+xnoremap ^ <Plug>(auto-c-v)^
+xnoremap $ <Plug>(auto-c-v)$
+xnoremap f <Plug>(auto-c-v)f
+xnoremap F <Plug>(auto-c-v)F
+xnoremap t <Plug>(auto-c-v)t
+xnoremap T <Plug>(auto-c-v)T
+
+xnoremap <expr> I mode() ==# "\<C-v>" ? 'I' : "<C-v>I"
+xnoremap <expr> A mode() ==# "\<C-v>" ? 'A' : "<C-v>A"
+```
+
