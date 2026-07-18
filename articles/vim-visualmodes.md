@@ -8,7 +8,8 @@ published_at: "2026-07-20 00:00"
 ---
 
 :::message
-この記事は [Vim 駅伝](https://vim-jp.org/ekiden/) の 7/20 の記事です。
+この記事は[Vim駅伝](https://vim-jp.org/ekiden/)の2026-07-20の記事です。
+Vim駅伝は常に参加者を募集しています。詳しくは[こちらのページ](https://vim-jp.org/ekiden/about/)をご覧ください。
 :::
 
 # 文字単位のビジュアルと行ビジュアルと矩形ビジュアル
