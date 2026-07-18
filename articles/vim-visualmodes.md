@@ -1,6 +1,6 @@
 ---
 title: "Vimのビジュアルモードの切り替えについて考える"
-emoji: "🇻"
+emoji: "🤔"
 type: "tech"
 topics: ["vim"]
 published: true
